@@ -1,0 +1,5 @@
+<div  class="container" *ngIf="todo">
+<h3>{{todo.sno}}{{todo.title}}</h3>
+<h3>{{todo.description}}</h3>
+<button class="btn btn-danger" (click)="deleteEventEmitted(todo)"> Delete </button>
+</div>

@@ -1,5 +1,7 @@
 <div class="container">
-  <app-header></app-header>
-  <app-recipes></app-recipes>
-  <app-shopping-list></app-shopping-list>
-  </div>
+  <app-header (navigationEvent) = "'Recipes'===$event?showRecipes=true:showRecipes=false"></app-header>
+  <router-outlet></router-outlet>
+  <br/>
+
+
+</div>
