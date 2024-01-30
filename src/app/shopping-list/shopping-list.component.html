@@ -4,8 +4,8 @@
     <hr>
     <ul class="list-group"><a
       class="list-group-item" s
-      tyle="cursor:pointer"
-    *ngFor="let ingredient of ingredients">
+      type="cursor:pointer"
+    *ngFor="let ingredient of this.manageIngredeintsService.getIngredientsByValue()">
       {{ingredient.name}} {{ingredient.amount}}
     </a></ul>
 
